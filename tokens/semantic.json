@@ -1,0 +1,374 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "color": {
+    "fg": {
+      "brand-solid": {
+        "value": "{color.brand.600}",
+        "type": "color",
+        "description": "브랜드 색상 텍스트 (강조)"
+      },
+      "brand-solid-pressed": {
+        "value": "{color.brand.700}",
+        "type": "color",
+        "description": "브랜드 색상 텍스트 (눌렀을 때)"
+      },
+      "brand-weak": {
+        "value": "{color.brand.500}",
+        "type": "color",
+        "description": "브랜드 색상 텍스트 (약한 강조)"
+      },
+      "brand-muted": {
+        "value": "{color.brand.400}",
+        "type": "color",
+        "description": "브랜드 색상 텍스트 (흐림)"
+      },
+      "brand-contrast": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "브랜드 배경 위의 텍스트 (흰색)"
+      },
+      "neutral": {
+        "value": "{color.gray.900}",
+        "type": "color",
+        "description": "기본 텍스트 색상"
+      },
+      "neutral-weak": {
+        "value": "{color.gray.700}",
+        "type": "color",
+        "description": "부가 정보 텍스트"
+      },
+      "neutral-muted": {
+        "value": "{color.gray.500}",
+        "type": "color",
+        "description": "흐린 텍스트 (placeholder 등)"
+      },
+      "neutral-subtle": {
+        "value": "{color.gray.400}",
+        "type": "color",
+        "description": "매우 연한 텍스트"
+      },
+      "neutral-inverted": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "어두운 배경 위의 텍스트"
+      },
+      "positive-solid": {
+        "value": "{color.positive.600}",
+        "type": "color",
+        "description": "성공/긍정 텍스트"
+      },
+      "positive-solid-pressed": {
+        "value": "{color.positive.700}",
+        "type": "color",
+        "description": "성공/긍정 텍스트 (눌렀을 때)"
+      },
+      "positive-weak": {
+        "value": "{color.positive.500}",
+        "type": "color"
+      },
+      "positive-muted": {
+        "value": "{color.positive.400}",
+        "type": "color"
+      },
+      "positive-contrast": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "초록 배경 위의 텍스트"
+      },
+      "warning-solid": {
+        "value": "{color.warning.700}",
+        "type": "color",
+        "description": "경고 텍스트"
+      },
+      "warning-solid-pressed": {
+        "value": "{color.warning.800}",
+        "type": "color",
+        "description": "경고 텍스트 (눌렀을 때)"
+      },
+      "warning-weak": {
+        "value": "{color.warning.600}",
+        "type": "color"
+      },
+      "warning-muted": {
+        "value": "{color.warning.500}",
+        "type": "color"
+      },
+      "warning-contrast": {
+        "value": "{color.gray.900}",
+        "type": "color",
+        "description": "노란 배경 위의 텍스트 (검정)"
+      },
+      "critical-solid": {
+        "value": "{color.critical.600}",
+        "type": "color",
+        "description": "오류/위험 텍스트"
+      },
+      "critical-solid-pressed": {
+        "value": "{color.critical.700}",
+        "type": "color",
+        "description": "오류/위험 텍스트 (눌렀을 때)"
+      },
+      "critical-weak": {
+        "value": "{color.critical.500}",
+        "type": "color"
+      },
+      "critical-muted": {
+        "value": "{color.critical.400}",
+        "type": "color"
+      },
+      "critical-contrast": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "빨간 배경 위의 텍스트"
+      },
+      "informative-solid": {
+        "value": "{color.informative.600}",
+        "type": "color",
+        "description": "정보 텍스트"
+      },
+      "informative-solid-pressed": {
+        "value": "{color.informative.700}",
+        "type": "color",
+        "description": "정보 텍스트 (눌렀을 때)"
+      },
+      "informative-weak": {
+        "value": "{color.informative.500}",
+        "type": "color"
+      },
+      "informative-muted": {
+        "value": "{color.informative.400}",
+        "type": "color"
+      },
+      "informative-contrast": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "파란 배경 위의 텍스트"
+      }
+    },
+    "bg": {
+      "brand-solid": {
+        "value": "{color.brand.600}",
+        "type": "color",
+        "description": "브랜드 색상 배경 (버튼 등)"
+      },
+      "brand-solid-pressed": {
+        "value": "{color.brand.700}",
+        "type": "color",
+        "description": "브랜드 색상 배경 (눌렀을 때)"
+      },
+      "brand-weak": {
+        "value": "{color.brand.100}",
+        "type": "color",
+        "description": "연한 브랜드 배경"
+      },
+      "brand-subtle": {
+        "value": "{color.brand.50}",
+        "type": "color",
+        "description": "매우 연한 브랜드 배경"
+      },
+      "brand-inverted": {
+        "value": "{color.brand.900}",
+        "type": "color",
+        "description": "어두운 브랜드 배경 (다크모드)"
+      },
+      "neutral": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "기본 배경 (페이지 배경)"
+      },
+      "neutral-solid": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "중립 배경 (카드, 패널)"
+      },
+      "neutral-weak": {
+        "value": "{color.gray.200}",
+        "type": "color",
+        "description": "약한 중립 배경"
+      },
+      "neutral-muted": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "흐린 중립 배경"
+      },
+      "neutral-subtle": {
+        "value": "{color.gray.50}",
+        "type": "color",
+        "description": "매우 연한 중립 배경"
+      },
+      "neutral-inverted": {
+        "value": "{color.gray.900}",
+        "type": "color",
+        "description": "어두운 배경 (다크모드)"
+      },
+      "positive-solid": {
+        "value": "{color.positive.600}",
+        "type": "color",
+        "description": "성공/긍정 배경 (버튼 등)"
+      },
+      "positive-solid-pressed": {
+        "value": "{color.positive.700}",
+        "type": "color",
+        "description": "성공/긍정 배경 (눌렀을 때)"
+      },
+      "positive-weak": {
+        "value": "{color.positive.100}",
+        "type": "color",
+        "description": "연한 성공 배경 (배너 등)"
+      },
+      "positive-subtle": {
+        "value": "{color.positive.50}",
+        "type": "color",
+        "description": "매우 연한 성공 배경"
+      },
+      "warning-solid": {
+        "value": "{color.warning.500}",
+        "type": "color",
+        "description": "경고 배경 (버튼 등)"
+      },
+      "warning-solid-pressed": {
+        "value": "{color.warning.600}",
+        "type": "color",
+        "description": "경고 배경 (눌렀을 때)"
+      },
+      "warning-weak": {
+        "value": "{color.warning.100}",
+        "type": "color",
+        "description": "연한 경고 배경 (배너 등)"
+      },
+      "warning-subtle": {
+        "value": "{color.warning.50}",
+        "type": "color",
+        "description": "매우 연한 경고 배경"
+      },
+      "critical-solid": {
+        "value": "{color.critical.600}",
+        "type": "color",
+        "description": "오류/위험 배경 (버튼 등)"
+      },
+      "critical-solid-pressed": {
+        "value": "{color.critical.700}",
+        "type": "color",
+        "description": "오류/위험 배경 (눌렀을 때)"
+      },
+      "critical-weak": {
+        "value": "{color.critical.100}",
+        "type": "color",
+        "description": "연한 오류 배경 (배너 등)"
+      },
+      "critical-subtle": {
+        "value": "{color.critical.50}",
+        "type": "color",
+        "description": "매우 연한 오류 배경"
+      },
+      "informative-solid": {
+        "value": "{color.informative.600}",
+        "type": "color",
+        "description": "정보 배경 (버튼 등)"
+      },
+      "informative-solid-pressed": {
+        "value": "{color.informative.700}",
+        "type": "color",
+        "description": "정보 배경 (눌렀을 때)"
+      },
+      "informative-weak": {
+        "value": "{color.informative.100}",
+        "type": "color",
+        "description": "연한 정보 배경 (배너 등)"
+      },
+      "informative-subtle": {
+        "value": "{color.informative.50}",
+        "type": "color",
+        "description": "매우 연한 정보 배경"
+      }
+    },
+    "stroke": {
+      "brand-solid": {
+        "value": "{color.brand.600}",
+        "type": "color",
+        "description": "브랜드 색상 테두리"
+      },
+      "brand-solid-pressed": {
+        "value": "{color.brand.700}",
+        "type": "color",
+        "description": "브랜드 색상 테두리 (눌렀을 때)"
+      },
+      "brand-weak": {
+        "value": "{color.brand.300}",
+        "type": "color",
+        "description": "연한 브랜드 테두리"
+      },
+      "neutral": {
+        "value": "{color.gray.300}",
+        "type": "color",
+        "description": "기본 테두리 (구분선 등)"
+      },
+      "neutral-weak": {
+        "value": "{color.gray.200}",
+        "type": "color",
+        "description": "약한 테두리"
+      },
+      "neutral-muted": {
+        "value": "{color.gray.100}",
+        "type": "color",
+        "description": "매우 연한 테두리"
+      },
+      "positive-solid": {
+        "value": "{color.positive.600}",
+        "type": "color",
+        "description": "성공/긍정 테두리"
+      },
+      "positive-solid-pressed": {
+        "value": "{color.positive.700}",
+        "type": "color",
+        "description": "성공/긍정 테두리 (눌렀을 때)"
+      },
+      "positive-weak": {
+        "value": "{color.positive.300}",
+        "type": "color"
+      },
+      "warning-solid": {
+        "value": "{color.warning.500}",
+        "type": "color",
+        "description": "경고 테두리"
+      },
+      "warning-solid-pressed": {
+        "value": "{color.warning.600}",
+        "type": "color",
+        "description": "경고 테두리 (눌렀을 때)"
+      },
+      "warning-weak": {
+        "value": "{color.warning.300}",
+        "type": "color"
+      },
+      "critical-solid": {
+        "value": "{color.critical.600}",
+        "type": "color",
+        "description": "오류/위험 테두리"
+      },
+      "critical-solid-pressed": {
+        "value": "{color.critical.700}",
+        "type": "color",
+        "description": "오류/위험 테두리 (눌렀을 때)"
+      },
+      "critical-weak": {
+        "value": "{color.critical.300}",
+        "type": "color"
+      },
+      "informative-solid": {
+        "value": "{color.informative.600}",
+        "type": "color",
+        "description": "정보 테두리"
+      },
+      "informative-solid-pressed": {
+        "value": "{color.informative.700}",
+        "type": "color",
+        "description": "정보 테두리 (눌렀을 때)"
+      },
+      "informative-weak": {
+        "value": "{color.informative.300}",
+        "type": "color"
+      }
+    }
+  }
+}

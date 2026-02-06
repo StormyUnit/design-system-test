@@ -1,0 +1,222 @@
+{
+  "$schema": "https://www.figma.com/community/plugin/1396023896892891515/Variables-Import-Export",
+  "version": "1.0",
+  "description": "Design System Foundation Tokens - Color + Typography",
+  "collections": [
+    {
+      "name": "Foundation/Color/Primitive",
+      "modes": ["Light"],
+      "variables": [
+        { "name": "gray/50", "type": "color", "value": {"Light": "#F9FAFB"} },
+        { "name": "gray/100", "type": "color", "value": {"Light": "#F3F4F6"} },
+        { "name": "gray/200", "type": "color", "value": {"Light": "#E5E7EB"} },
+        { "name": "gray/300", "type": "color", "value": {"Light": "#D1D5DB"} },
+        { "name": "gray/400", "type": "color", "value": {"Light": "#9CA3AF"} },
+        { "name": "gray/500", "type": "color", "value": {"Light": "#6B7280"} },
+        { "name": "gray/600", "type": "color", "value": {"Light": "#4B5563"} },
+        { "name": "gray/700", "type": "color", "value": {"Light": "#374151"} },
+        { "name": "gray/800", "type": "color", "value": {"Light": "#1F2937"} },
+        { "name": "gray/900", "type": "color", "value": {"Light": "#111827"} },
+
+        { "name": "brand/50", "type": "color", "value": {"Light": "#EFF6FF"} },
+        { "name": "brand/100", "type": "color", "value": {"Light": "#DBEAFE"} },
+        { "name": "brand/200", "type": "color", "value": {"Light": "#BFDBFE"} },
+        { "name": "brand/300", "type": "color", "value": {"Light": "#93C5FD"} },
+        { "name": "brand/400", "type": "color", "value": {"Light": "#60A5FA"} },
+        { "name": "brand/500", "type": "color", "value": {"Light": "#3B82F6"} },
+        { "name": "brand/600", "type": "color", "value": {"Light": "#2563EB"} },
+        { "name": "brand/700", "type": "color", "value": {"Light": "#1D4ED8"} },
+        { "name": "brand/800", "type": "color", "value": {"Light": "#1E40AF"} },
+        { "name": "brand/900", "type": "color", "value": {"Light": "#1E3A8A"} },
+
+        { "name": "positive/50", "type": "color", "value": {"Light": "#F0FDF4"} },
+        { "name": "positive/100", "type": "color", "value": {"Light": "#DCFCE7"} },
+        { "name": "positive/200", "type": "color", "value": {"Light": "#BBF7D0"} },
+        { "name": "positive/300", "type": "color", "value": {"Light": "#86EFAC"} },
+        { "name": "positive/400", "type": "color", "value": {"Light": "#4ADE80"} },
+        { "name": "positive/500", "type": "color", "value": {"Light": "#22C55E"} },
+        { "name": "positive/600", "type": "color", "value": {"Light": "#16A34A"} },
+        { "name": "positive/700", "type": "color", "value": {"Light": "#15803D"} },
+        { "name": "positive/800", "type": "color", "value": {"Light": "#166534"} },
+        { "name": "positive/900", "type": "color", "value": {"Light": "#14532D"} },
+
+        { "name": "warning/50", "type": "color", "value": {"Light": "#FFFBEB"} },
+        { "name": "warning/100", "type": "color", "value": {"Light": "#FEF3C7"} },
+        { "name": "warning/200", "type": "color", "value": {"Light": "#FDE68A"} },
+        { "name": "warning/300", "type": "color", "value": {"Light": "#FCD34D"} },
+        { "name": "warning/400", "type": "color", "value": {"Light": "#FBBF24"} },
+        { "name": "warning/500", "type": "color", "value": {"Light": "#F59E0B"} },
+        { "name": "warning/600", "type": "color", "value": {"Light": "#D97706"} },
+        { "name": "warning/700", "type": "color", "value": {"Light": "#B45309"} },
+        { "name": "warning/800", "type": "color", "value": {"Light": "#92400E"} },
+        { "name": "warning/900", "type": "color", "value": {"Light": "#78350F"} },
+
+        { "name": "critical/50", "type": "color", "value": {"Light": "#FEF2F2"} },
+        { "name": "critical/100", "type": "color", "value": {"Light": "#FEE2E2"} },
+        { "name": "critical/200", "type": "color", "value": {"Light": "#FECACA"} },
+        { "name": "critical/300", "type": "color", "value": {"Light": "#FCA5A5"} },
+        { "name": "critical/400", "type": "color", "value": {"Light": "#F87171"} },
+        { "name": "critical/500", "type": "color", "value": {"Light": "#EF4444"} },
+        { "name": "critical/600", "type": "color", "value": {"Light": "#DC2626"} },
+        { "name": "critical/700", "type": "color", "value": {"Light": "#B91C1C"} },
+        { "name": "critical/800", "type": "color", "value": {"Light": "#991B1B"} },
+        { "name": "critical/900", "type": "color", "value": {"Light": "#7F1D1D"} },
+
+        { "name": "informative/50", "type": "color", "value": {"Light": "#F0F9FF"} },
+        { "name": "informative/100", "type": "color", "value": {"Light": "#E0F2FE"} },
+        { "name": "informative/200", "type": "color", "value": {"Light": "#BAE6FD"} },
+        { "name": "informative/300", "type": "color", "value": {"Light": "#7DD3FC"} },
+        { "name": "informative/400", "type": "color", "value": {"Light": "#38BDF8"} },
+        { "name": "informative/500", "type": "color", "value": {"Light": "#0EA5E9"} },
+        { "name": "informative/600", "type": "color", "value": {"Light": "#0284C7"} },
+        { "name": "informative/700", "type": "color", "value": {"Light": "#0369A1"} },
+        { "name": "informative/800", "type": "color", "value": {"Light": "#075985"} },
+        { "name": "informative/900", "type": "color", "value": {"Light": "#0C4A6E"} }
+      ]
+    },
+    {
+      "name": "Foundation/Color/Semantic-Foreground",
+      "modes": ["Light"],
+      "variables": [
+        { "name": "fg/brand-solid", "type": "color", "value": {"Light": "{brand/600}"}, "description": "브랜드 색상 텍스트" },
+        { "name": "fg/brand-solid-pressed", "type": "color", "value": {"Light": "{brand/700}"} },
+        { "name": "fg/brand-weak", "type": "color", "value": {"Light": "{brand/500}"} },
+        { "name": "fg/brand-muted", "type": "color", "value": {"Light": "{brand/400}"} },
+        { "name": "fg/brand-contrast", "type": "color", "value": {"Light": "{gray/50}"} },
+
+        { "name": "fg/neutral", "type": "color", "value": {"Light": "{gray/900}"}, "description": "기본 텍스트" },
+        { "name": "fg/neutral-weak", "type": "color", "value": {"Light": "{gray/700}"} },
+        { "name": "fg/neutral-muted", "type": "color", "value": {"Light": "{gray/500}"} },
+        { "name": "fg/neutral-subtle", "type": "color", "value": {"Light": "{gray/400}"} },
+        { "name": "fg/neutral-inverted", "type": "color", "value": {"Light": "{gray/50}"} },
+
+        { "name": "fg/positive-solid", "type": "color", "value": {"Light": "{positive/600}"} },
+        { "name": "fg/positive-solid-pressed", "type": "color", "value": {"Light": "{positive/700}"} },
+        { "name": "fg/positive-weak", "type": "color", "value": {"Light": "{positive/500}"} },
+        { "name": "fg/positive-muted", "type": "color", "value": {"Light": "{positive/400}"} },
+        { "name": "fg/positive-contrast", "type": "color", "value": {"Light": "{gray/50}"} },
+
+        { "name": "fg/warning-solid", "type": "color", "value": {"Light": "{warning/700}"} },
+        { "name": "fg/warning-solid-pressed", "type": "color", "value": {"Light": "{warning/800}"} },
+        { "name": "fg/warning-weak", "type": "color", "value": {"Light": "{warning/600}"} },
+        { "name": "fg/warning-muted", "type": "color", "value": {"Light": "{warning/500}"} },
+        { "name": "fg/warning-contrast", "type": "color", "value": {"Light": "{gray/900}"} },
+
+        { "name": "fg/critical-solid", "type": "color", "value": {"Light": "{critical/600}"} },
+        { "name": "fg/critical-solid-pressed", "type": "color", "value": {"Light": "{critical/700}"} },
+        { "name": "fg/critical-weak", "type": "color", "value": {"Light": "{critical/500}"} },
+        { "name": "fg/critical-muted", "type": "color", "value": {"Light": "{critical/400}"} },
+        { "name": "fg/critical-contrast", "type": "color", "value": {"Light": "{gray/50}"} },
+
+        { "name": "fg/informative-solid", "type": "color", "value": {"Light": "{informative/600}"} },
+        { "name": "fg/informative-solid-pressed", "type": "color", "value": {"Light": "{informative/700}"} },
+        { "name": "fg/informative-weak", "type": "color", "value": {"Light": "{informative/500}"} },
+        { "name": "fg/informative-muted", "type": "color", "value": {"Light": "{informative/400}"} },
+        { "name": "fg/informative-contrast", "type": "color", "value": {"Light": "{gray/50}"} }
+      ]
+    },
+    {
+      "name": "Foundation/Color/Semantic-Background",
+      "modes": ["Light"],
+      "variables": [
+        { "name": "bg/brand-solid", "type": "color", "value": {"Light": "{brand/600}"}, "description": "브랜드 배경" },
+        { "name": "bg/brand-solid-pressed", "type": "color", "value": {"Light": "{brand/700}"} },
+        { "name": "bg/brand-weak", "type": "color", "value": {"Light": "{brand/100}"} },
+        { "name": "bg/brand-subtle", "type": "color", "value": {"Light": "{brand/50}"} },
+        { "name": "bg/brand-inverted", "type": "color", "value": {"Light": "{brand/900}"} },
+
+        { "name": "bg/neutral", "type": "color", "value": {"Light": "{gray/50}"}, "description": "기본 배경" },
+        { "name": "bg/neutral-solid", "type": "color", "value": {"Light": "{gray/100}"} },
+        { "name": "bg/neutral-weak", "type": "color", "value": {"Light": "{gray/200}"} },
+        { "name": "bg/neutral-muted", "type": "color", "value": {"Light": "{gray/300}"} },
+        { "name": "bg/neutral-subtle", "type": "color", "value": {"Light": "{gray/50}"} },
+        { "name": "bg/neutral-inverted", "type": "color", "value": {"Light": "{gray/900}"} },
+
+        { "name": "bg/positive-solid", "type": "color", "value": {"Light": "{positive/600}"} },
+        { "name": "bg/positive-solid-pressed", "type": "color", "value": {"Light": "{positive/700}"} },
+        { "name": "bg/positive-weak", "type": "color", "value": {"Light": "{positive/100}"} },
+        { "name": "bg/positive-subtle", "type": "color", "value": {"Light": "{positive/50}"} },
+
+        { "name": "bg/warning-solid", "type": "color", "value": {"Light": "{warning/500}"} },
+        { "name": "bg/warning-solid-pressed", "type": "color", "value": {"Light": "{warning/600}"} },
+        { "name": "bg/warning-weak", "type": "color", "value": {"Light": "{warning/100}"} },
+        { "name": "bg/warning-subtle", "type": "color", "value": {"Light": "{warning/50}"} },
+
+        { "name": "bg/critical-solid", "type": "color", "value": {"Light": "{critical/600}"} },
+        { "name": "bg/critical-solid-pressed", "type": "color", "value": {"Light": "{critical/700}"} },
+        { "name": "bg/critical-weak", "type": "color", "value": {"Light": "{critical/100}"} },
+        { "name": "bg/critical-subtle", "type": "color", "value": {"Light": "{critical/50}"} },
+
+        { "name": "bg/informative-solid", "type": "color", "value": {"Light": "{informative/600}"} },
+        { "name": "bg/informative-solid-pressed", "type": "color", "value": {"Light": "{informative/700}"} },
+        { "name": "bg/informative-weak", "type": "color", "value": {"Light": "{informative/100}"} },
+        { "name": "bg/informative-subtle", "type": "color", "value": {"Light": "{informative/50}"} }
+      ]
+    },
+    {
+      "name": "Foundation/Color/Semantic-Stroke",
+      "modes": ["Light"],
+      "variables": [
+        { "name": "stroke/brand-solid", "type": "color", "value": {"Light": "{brand/600}"} },
+        { "name": "stroke/brand-solid-pressed", "type": "color", "value": {"Light": "{brand/700}"} },
+        { "name": "stroke/brand-weak", "type": "color", "value": {"Light": "{brand/300}"} },
+
+        { "name": "stroke/neutral", "type": "color", "value": {"Light": "{gray/300}"}, "description": "기본 테두리" },
+        { "name": "stroke/neutral-weak", "type": "color", "value": {"Light": "{gray/200}"} },
+        { "name": "stroke/neutral-muted", "type": "color", "value": {"Light": "{gray/100}"} },
+
+        { "name": "stroke/positive-solid", "type": "color", "value": {"Light": "{positive/600}"} },
+        { "name": "stroke/positive-solid-pressed", "type": "color", "value": {"Light": "{positive/700}"} },
+        { "name": "stroke/positive-weak", "type": "color", "value": {"Light": "{positive/300}"} },
+
+        { "name": "stroke/warning-solid", "type": "color", "value": {"Light": "{warning/500}"} },
+        { "name": "stroke/warning-solid-pressed", "type": "color", "value": {"Light": "{warning/600}"} },
+        { "name": "stroke/warning-weak", "type": "color", "value": {"Light": "{warning/300}"} },
+
+        { "name": "stroke/critical-solid", "type": "color", "value": {"Light": "{critical/600}"} },
+        { "name": "stroke/critical-solid-pressed", "type": "color", "value": {"Light": "{critical/700}"} },
+        { "name": "stroke/critical-weak", "type": "color", "value": {"Light": "{critical/300}"} },
+
+        { "name": "stroke/informative-solid", "type": "color", "value": {"Light": "{informative/600}"} },
+        { "name": "stroke/informative-solid-pressed", "type": "color", "value": {"Light": "{informative/700}"} },
+        { "name": "stroke/informative-weak", "type": "color", "value": {"Light": "{informative/300}"} }
+      ]
+    },
+    {
+      "name": "Foundation/Typography/Base",
+      "modes": ["Light"],
+      "variables": [
+        { "name": "font-size/t1", "type": "number", "value": {"Light": 10} },
+        { "name": "font-size/t2", "type": "number", "value": {"Light": 11} },
+        { "name": "font-size/t3", "type": "number", "value": {"Light": 12} },
+        { "name": "font-size/t4", "type": "number", "value": {"Light": 14} },
+        { "name": "font-size/t5", "type": "number", "value": {"Light": 15} },
+        { "name": "font-size/t6", "type": "number", "value": {"Light": 16} },
+        { "name": "font-size/t7", "type": "number", "value": {"Light": 18} },
+        { "name": "font-size/t8", "type": "number", "value": {"Light": 20} },
+        { "name": "font-size/t9", "type": "number", "value": {"Light": 24} },
+        { "name": "font-size/t10", "type": "number", "value": {"Light": 32} },
+
+        { "name": "line-height/t1", "type": "number", "value": {"Light": 16} },
+        { "name": "line-height/t2", "type": "number", "value": {"Light": 16} },
+        { "name": "line-height/t3", "type": "number", "value": {"Light": 18} },
+        { "name": "line-height/t4", "type": "number", "value": {"Light": 20} },
+        { "name": "line-height/t5", "type": "number", "value": {"Light": 22} },
+        { "name": "line-height/t6", "type": "number", "value": {"Light": 24} },
+        { "name": "line-height/t7", "type": "number", "value": {"Light": 28} },
+        { "name": "line-height/t8", "type": "number", "value": {"Light": 32} },
+        { "name": "line-height/t9", "type": "number", "value": {"Light": 32} },
+        { "name": "line-height/t10", "type": "number", "value": {"Light": 40} },
+
+        { "name": "font-weight/regular", "type": "number", "value": {"Light": 400} },
+        { "name": "font-weight/medium", "type": "number", "value": {"Light": 500} },
+        { "name": "font-weight/bold", "type": "number", "value": {"Light": 700} }
+      ]
+    }
+  ],
+  "notes": {
+    "usage": "이 파일을 Figma 'Variables Import/Export' 플러그인으로 import하거나, 매핑 가이드를 참고하여 수동으로 생성하세요.",
+    "semantic_references": "Semantic variables의 {값}은 Primitive variable을 참조합니다. Figma에서 alias로 연결하세요.",
+    "typography_note": "Typography scale과 semantic styles는 Text Styles로 생성하며, 위의 base token 변수들을 조합합니다."
+  }
+}
