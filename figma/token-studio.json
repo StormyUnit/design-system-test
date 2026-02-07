@@ -1,0 +1,361 @@
+{
+  "primitive": {
+    "color": {
+      "gray": {
+        "00": { "value": "#FFFFFF", "type": "color", "description": "순수 흰색" },
+        "50": { "value": "#F7F8FA", "type": "color" },
+        "100": { "value": "#F2F3F6", "type": "color" },
+        "200": { "value": "#EAEBEE", "type": "color" },
+        "300": { "value": "#DCDEE3", "type": "color" },
+        "400": { "value": "#D1D3D8", "type": "color" },
+        "500": { "value": "#ADB1BA", "type": "color", "description": "중간 회색" },
+        "600": { "value": "#868B94", "type": "color" },
+        "700": { "value": "#4D5159", "type": "color" },
+        "800": { "value": "#393A40", "type": "color" },
+        "900": { "value": "#212124", "type": "color", "description": "가장 어두운 회색" }
+      },
+      "carrot": {
+        "50": { "value": "#FFF5F0", "type": "color" },
+        "100": { "value": "#FFE2D2", "type": "color" },
+        "200": { "value": "#FFD2B9", "type": "color" },
+        "300": { "value": "#FFBC97", "type": "color" },
+        "400": { "value": "#FF9E66", "type": "color" },
+        "500": { "value": "#FF6F0F", "type": "color", "description": "당근 시그니처 (SEED primary)" },
+        "600": { "value": "#FA6616", "type": "color" },
+        "700": { "value": "#F05705", "type": "color" },
+        "800": { "value": "#CC4700", "type": "color" },
+        "900": { "value": "#B44104", "type": "color" },
+        "950": { "value": "#A03A03", "type": "color" }
+      },
+      "blue": {
+        "50": { "value": "#EBF7FA", "type": "color" },
+        "100": { "value": "#D2EDFA", "type": "color" },
+        "200": { "value": "#B9E3FA", "type": "color" },
+        "300": { "value": "#87D7FF", "type": "color" },
+        "400": { "value": "#57C7FF", "type": "color" },
+        "500": { "value": "#009CEB", "type": "color", "description": "SEED accent" },
+        "600": { "value": "#0088CC", "type": "color" },
+        "700": { "value": "#0077B2", "type": "color" },
+        "800": { "value": "#006199", "type": "color" },
+        "900": { "value": "#004C73", "type": "color" },
+        "950": { "value": "#003B59", "type": "color" }
+      },
+      "red": {
+        "50": { "value": "#FFF3F2", "type": "color" },
+        "100": { "value": "#FFE5E3", "type": "color" },
+        "200": { "value": "#FCD2CF", "type": "color" },
+        "300": { "value": "#FFACA6", "type": "color" },
+        "400": { "value": "#FF7E75", "type": "color" },
+        "500": { "value": "#FF4133", "type": "color" },
+        "600": { "value": "#FA2314", "type": "color", "description": "SEED danger" },
+        "700": { "value": "#E81607", "type": "color" },
+        "800": { "value": "#A62014", "type": "color" },
+        "900": { "value": "#910C00", "type": "color" },
+        "950": { "value": "#821006", "type": "color" }
+      },
+      "green": {
+        "50": { "value": "#E8FAF6", "type": "color" },
+        "100": { "value": "#C7F2E4", "type": "color" },
+        "200": { "value": "#96EBC3", "type": "color" },
+        "300": { "value": "#6ADEAC", "type": "color" },
+        "400": { "value": "#30C795", "type": "color" },
+        "500": { "value": "#1AA174", "type": "color", "description": "SEED success" },
+        "600": { "value": "#128C6E", "type": "color" },
+        "700": { "value": "#077A5E", "type": "color" },
+        "800": { "value": "#06614A", "type": "color" },
+        "900": { "value": "#004F40", "type": "color" },
+        "950": { "value": "#004034", "type": "color" }
+      },
+      "yellow": {
+        "50": { "value": "#FFF7E6", "type": "color" },
+        "100": { "value": "#FFE3BA", "type": "color" },
+        "200": { "value": "#FACC87", "type": "color" },
+        "300": { "value": "#F7BE68", "type": "color" },
+        "400": { "value": "#DEA651", "type": "color", "description": "SEED warning" },
+        "500": { "value": "#C27F29", "type": "color" },
+        "600": { "value": "#A66C21", "type": "color" },
+        "700": { "value": "#805217", "type": "color" },
+        "800": { "value": "#6B4717", "type": "color" },
+        "900": { "value": "#593D17", "type": "color" },
+        "950": { "value": "#4D361A", "type": "color" }
+      },
+      "pink": {
+        "50": { "value": "#FFF5F5", "type": "color" },
+        "100": { "value": "#FFDDDB", "type": "color" },
+        "200": { "value": "#FFBFC5", "type": "color" },
+        "300": { "value": "#FFADB4", "type": "color" },
+        "400": { "value": "#FF8A9D", "type": "color" },
+        "500": { "value": "#F0657C", "type": "color" },
+        "600": { "value": "#DB4B6A", "type": "color" },
+        "700": { "value": "#BD2B5C", "type": "color" },
+        "800": { "value": "#991C45", "type": "color" },
+        "900": { "value": "#800D3D", "type": "color" },
+        "950": { "value": "#660A30", "type": "color" }
+      },
+      "purple": {
+        "50": { "value": "#F6F4FE", "type": "color" },
+        "100": { "value": "#E3DAFE", "type": "color" },
+        "200": { "value": "#D5C7FF", "type": "color" },
+        "300": { "value": "#CFBFFF", "type": "color" },
+        "400": { "value": "#B69EFF", "type": "color" },
+        "500": { "value": "#9675FA", "type": "color" },
+        "600": { "value": "#8361E8", "type": "color" },
+        "700": { "value": "#6748C7", "type": "color" },
+        "800": { "value": "#4F3699", "type": "color" },
+        "900": { "value": "#3F2687", "type": "color" },
+        "950": { "value": "#331E70", "type": "color" }
+      }
+    },
+    "font-size": {
+      "t1": { "value": "10", "type": "fontSizes", "description": "10px" },
+      "t2": { "value": "11", "type": "fontSizes", "description": "11px" },
+      "t3": { "value": "12", "type": "fontSizes", "description": "12px" },
+      "t4": { "value": "14", "type": "fontSizes", "description": "14px" },
+      "t5": { "value": "15", "type": "fontSizes", "description": "15px" },
+      "t6": { "value": "16", "type": "fontSizes", "description": "16px - 기본" },
+      "t7": { "value": "18", "type": "fontSizes", "description": "18px" },
+      "t8": { "value": "20", "type": "fontSizes", "description": "20px" },
+      "t9": { "value": "24", "type": "fontSizes", "description": "24px" },
+      "t10": { "value": "32", "type": "fontSizes", "description": "32px" }
+    },
+    "line-height": {
+      "t1": { "value": "16", "type": "lineHeights" },
+      "t2": { "value": "16", "type": "lineHeights" },
+      "t3": { "value": "18", "type": "lineHeights" },
+      "t4": { "value": "20", "type": "lineHeights" },
+      "t5": { "value": "22", "type": "lineHeights" },
+      "t6": { "value": "24", "type": "lineHeights" },
+      "t7": { "value": "28", "type": "lineHeights" },
+      "t8": { "value": "32", "type": "lineHeights" },
+      "t9": { "value": "32", "type": "lineHeights" },
+      "t10": { "value": "40", "type": "lineHeights" }
+    },
+    "font-weight": {
+      "regular": { "value": "Regular", "type": "fontWeights" },
+      "medium": { "value": "Medium", "type": "fontWeights" },
+      "bold": { "value": "Bold", "type": "fontWeights" }
+    },
+    "font-family": {
+      "default": { "value": "Inter", "type": "fontFamilies", "description": "기본 폰트 (Figma용)" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "fg": {
+        "brand-solid": { "value": "{color.carrot.600}", "type": "color", "description": "브랜드 텍스트 (강조)" },
+        "brand-solid-pressed": { "value": "{color.carrot.700}", "type": "color" },
+        "brand-weak": { "value": "{color.carrot.500}", "type": "color" },
+        "brand-muted": { "value": "{color.carrot.400}", "type": "color" },
+        "brand-contrast": { "value": "{color.gray.00}", "type": "color", "description": "브랜드 배경 위 흰 텍스트" },
+
+        "neutral": { "value": "{color.gray.900}", "type": "color", "description": "기본 텍스트" },
+        "neutral-weak": { "value": "{color.gray.700}", "type": "color", "description": "부가 정보 텍스트" },
+        "neutral-muted": { "value": "{color.gray.600}", "type": "color", "description": "흐린 텍스트 (placeholder)" },
+        "neutral-subtle": { "value": "{color.gray.500}", "type": "color" },
+        "neutral-inverted": { "value": "{color.gray.00}", "type": "color", "description": "어두운 배경 위 텍스트" },
+
+        "positive-solid": { "value": "{color.green.600}", "type": "color", "description": "성공 텍스트" },
+        "positive-solid-pressed": { "value": "{color.green.700}", "type": "color" },
+        "positive-weak": { "value": "{color.green.500}", "type": "color" },
+        "positive-muted": { "value": "{color.green.400}", "type": "color" },
+        "positive-contrast": { "value": "{color.gray.00}", "type": "color" },
+
+        "warning-solid": { "value": "{color.yellow.700}", "type": "color", "description": "경고 텍스트" },
+        "warning-solid-pressed": { "value": "{color.yellow.800}", "type": "color" },
+        "warning-weak": { "value": "{color.yellow.600}", "type": "color" },
+        "warning-muted": { "value": "{color.yellow.500}", "type": "color" },
+        "warning-contrast": { "value": "{color.gray.900}", "type": "color", "description": "노란 배경 위 검정 텍스트" },
+
+        "critical-solid": { "value": "{color.red.600}", "type": "color", "description": "오류 텍스트" },
+        "critical-solid-pressed": { "value": "{color.red.700}", "type": "color" },
+        "critical-weak": { "value": "{color.red.500}", "type": "color" },
+        "critical-muted": { "value": "{color.red.400}", "type": "color" },
+        "critical-contrast": { "value": "{color.gray.00}", "type": "color" },
+
+        "informative-solid": { "value": "{color.blue.600}", "type": "color", "description": "정보 텍스트" },
+        "informative-solid-pressed": { "value": "{color.blue.700}", "type": "color" },
+        "informative-weak": { "value": "{color.blue.500}", "type": "color" },
+        "informative-muted": { "value": "{color.blue.400}", "type": "color" },
+        "informative-contrast": { "value": "{color.gray.00}", "type": "color" },
+
+        "pink-solid": { "value": "{color.pink.600}", "type": "color" },
+        "pink-solid-pressed": { "value": "{color.pink.700}", "type": "color" },
+        "pink-weak": { "value": "{color.pink.500}", "type": "color" },
+        "pink-muted": { "value": "{color.pink.400}", "type": "color" },
+        "pink-contrast": { "value": "{color.gray.00}", "type": "color" },
+
+        "purple-solid": { "value": "{color.purple.600}", "type": "color" },
+        "purple-solid-pressed": { "value": "{color.purple.700}", "type": "color" },
+        "purple-weak": { "value": "{color.purple.500}", "type": "color" },
+        "purple-muted": { "value": "{color.purple.400}", "type": "color" },
+        "purple-contrast": { "value": "{color.gray.00}", "type": "color" }
+      },
+      "bg": {
+        "brand-solid": { "value": "{color.carrot.500}", "type": "color", "description": "브랜드 배경 (SEED primary)" },
+        "brand-solid-pressed": { "value": "{color.carrot.600}", "type": "color" },
+        "brand-weak": { "value": "{color.carrot.100}", "type": "color" },
+        "brand-subtle": { "value": "{color.carrot.50}", "type": "color" },
+        "brand-inverted": { "value": "{color.carrot.900}", "type": "color" },
+
+        "neutral": { "value": "{color.gray.00}", "type": "color", "description": "기본 배경 (SEED paper-default)" },
+        "neutral-solid": { "value": "{color.gray.100}", "type": "color", "description": "카드/패널 배경" },
+        "neutral-weak": { "value": "{color.gray.200}", "type": "color" },
+        "neutral-muted": { "value": "{color.gray.300}", "type": "color" },
+        "neutral-subtle": { "value": "{color.gray.50}", "type": "color" },
+        "neutral-inverted": { "value": "{color.gray.900}", "type": "color" },
+
+        "positive-solid": { "value": "{color.green.500}", "type": "color", "description": "성공 배경 (SEED success)" },
+        "positive-solid-pressed": { "value": "{color.green.600}", "type": "color" },
+        "positive-weak": { "value": "{color.green.100}", "type": "color" },
+        "positive-subtle": { "value": "{color.green.50}", "type": "color" },
+
+        "warning-solid": { "value": "{color.yellow.400}", "type": "color", "description": "경고 배경 (SEED warning)" },
+        "warning-solid-pressed": { "value": "{color.yellow.500}", "type": "color" },
+        "warning-weak": { "value": "{color.yellow.100}", "type": "color" },
+        "warning-subtle": { "value": "{color.yellow.50}", "type": "color" },
+
+        "critical-solid": { "value": "{color.red.600}", "type": "color", "description": "오류 배경 (SEED danger)" },
+        "critical-solid-pressed": { "value": "{color.red.700}", "type": "color" },
+        "critical-weak": { "value": "{color.red.100}", "type": "color" },
+        "critical-subtle": { "value": "{color.red.50}", "type": "color" },
+
+        "informative-solid": { "value": "{color.blue.500}", "type": "color", "description": "정보 배경 (SEED accent)" },
+        "informative-solid-pressed": { "value": "{color.blue.600}", "type": "color" },
+        "informative-weak": { "value": "{color.blue.100}", "type": "color" },
+        "informative-subtle": { "value": "{color.blue.50}", "type": "color" },
+
+        "pink-solid": { "value": "{color.pink.500}", "type": "color" },
+        "pink-solid-pressed": { "value": "{color.pink.600}", "type": "color" },
+        "pink-weak": { "value": "{color.pink.100}", "type": "color" },
+        "pink-subtle": { "value": "{color.pink.50}", "type": "color" },
+
+        "purple-solid": { "value": "{color.purple.500}", "type": "color" },
+        "purple-solid-pressed": { "value": "{color.purple.600}", "type": "color" },
+        "purple-weak": { "value": "{color.purple.100}", "type": "color" },
+        "purple-subtle": { "value": "{color.purple.50}", "type": "color" }
+      },
+      "stroke": {
+        "brand-solid": { "value": "{color.carrot.500}", "type": "color" },
+        "brand-solid-pressed": { "value": "{color.carrot.600}", "type": "color" },
+        "brand-weak": { "value": "{color.carrot.300}", "type": "color" },
+
+        "neutral": { "value": "{color.gray.300}", "type": "color", "description": "기본 테두리 (SEED divider)" },
+        "neutral-weak": { "value": "{color.gray.200}", "type": "color" },
+        "neutral-muted": { "value": "{color.gray.100}", "type": "color" },
+
+        "positive-solid": { "value": "{color.green.500}", "type": "color" },
+        "positive-solid-pressed": { "value": "{color.green.600}", "type": "color" },
+        "positive-weak": { "value": "{color.green.300}", "type": "color" },
+
+        "warning-solid": { "value": "{color.yellow.400}", "type": "color" },
+        "warning-solid-pressed": { "value": "{color.yellow.500}", "type": "color" },
+        "warning-weak": { "value": "{color.yellow.200}", "type": "color" },
+
+        "critical-solid": { "value": "{color.red.600}", "type": "color" },
+        "critical-solid-pressed": { "value": "{color.red.700}", "type": "color" },
+        "critical-weak": { "value": "{color.red.300}", "type": "color" },
+
+        "informative-solid": { "value": "{color.blue.500}", "type": "color" },
+        "informative-solid-pressed": { "value": "{color.blue.600}", "type": "color" },
+        "informative-weak": { "value": "{color.blue.300}", "type": "color" },
+
+        "pink-solid": { "value": "{color.pink.500}", "type": "color" },
+        "pink-solid-pressed": { "value": "{color.pink.600}", "type": "color" },
+        "pink-weak": { "value": "{color.pink.300}", "type": "color" },
+
+        "purple-solid": { "value": "{color.purple.500}", "type": "color" },
+        "purple-solid-pressed": { "value": "{color.purple.600}", "type": "color" },
+        "purple-weak": { "value": "{color.purple.300}", "type": "color" }
+      }
+    },
+    "typography": {
+      "scale": {
+        "t1": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t1}", "lineHeight": "{line-height.t1}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t1}", "lineHeight": "{line-height.t1}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t1}", "lineHeight": "{line-height.t1}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t2": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t2}", "lineHeight": "{line-height.t2}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t2}", "lineHeight": "{line-height.t2}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t2}", "lineHeight": "{line-height.t2}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t3": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t3}", "lineHeight": "{line-height.t3}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t3}", "lineHeight": "{line-height.t3}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t3}", "lineHeight": "{line-height.t3}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t4": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t4}", "lineHeight": "{line-height.t4}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t4}", "lineHeight": "{line-height.t4}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t4}", "lineHeight": "{line-height.t4}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t5": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t5}", "lineHeight": "{line-height.t5}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t5}", "lineHeight": "{line-height.t5}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t5}", "lineHeight": "{line-height.t5}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t6": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t6}", "lineHeight": "{line-height.t6}", "fontWeight": "{font-weight.regular}" }, "type": "typography", "description": "기본 본문" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t6}", "lineHeight": "{line-height.t6}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t6}", "lineHeight": "{line-height.t6}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t7": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t7}", "lineHeight": "{line-height.t7}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t7}", "lineHeight": "{line-height.t7}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t7}", "lineHeight": "{line-height.t7}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t8": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t8}", "lineHeight": "{line-height.t8}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t8}", "lineHeight": "{line-height.t8}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t8}", "lineHeight": "{line-height.t8}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t9": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t9}", "lineHeight": "{line-height.t9}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t9}", "lineHeight": "{line-height.t9}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t9}", "lineHeight": "{line-height.t9}", "fontWeight": "{font-weight.bold}" }, "type": "typography" }
+        },
+        "t10": {
+          "regular": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t10}", "lineHeight": "{line-height.t10}", "fontWeight": "{font-weight.regular}" }, "type": "typography" },
+          "medium": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t10}", "lineHeight": "{line-height.t10}", "fontWeight": "{font-weight.medium}" }, "type": "typography" },
+          "bold": { "value": { "fontFamily": "{font-family.default}", "fontSize": "{font-size.t10}", "lineHeight": "{line-height.t10}", "fontWeight": "{font-weight.bold}" }, "type": "typography", "description": "32px, bold (큰 제목)" }
+        }
+      },
+      "semantic": {
+        "screenTitle": { "value": "{typography.scale.t10.bold}", "type": "typography", "description": "화면 최상단 제목 (32px, bold)" },
+        "pageTitle": { "value": "{typography.scale.t9.bold}", "type": "typography", "description": "페이지 제목 (24px, bold)" },
+        "sectionTitle": { "value": "{typography.scale.t8.bold}", "type": "typography", "description": "섹션 제목 (20px, bold)" },
+        "heading": { "value": "{typography.scale.t7.bold}", "type": "typography", "description": "소제목 (18px, bold)" },
+        "subheading": { "value": "{typography.scale.t6.medium}", "type": "typography", "description": "부제목 (16px, medium)" },
+        "body": { "value": "{typography.scale.t6.regular}", "type": "typography", "description": "기본 본문 (16px, regular)" },
+        "bodyEmphasis": { "value": "{typography.scale.t6.medium}", "type": "typography", "description": "강조 본문 (16px, medium)" },
+        "bodyLarge": { "value": "{typography.scale.t7.regular}", "type": "typography", "description": "큰 본문 (18px, regular)" },
+        "bodySmall": { "value": "{typography.scale.t5.regular}", "type": "typography", "description": "작은 본문 (15px, regular)" },
+        "label": { "value": "{typography.scale.t5.medium}", "type": "typography", "description": "라벨 (15px, medium)" },
+        "caption": { "value": "{typography.scale.t4.regular}", "type": "typography", "description": "캡션 (14px, regular)" },
+        "captionEmphasis": { "value": "{typography.scale.t4.medium}", "type": "typography", "description": "강조 캡션 (14px, medium)" },
+        "footnote": { "value": "{typography.scale.t3.regular}", "type": "typography", "description": "각주 (12px, regular)" },
+        "micro": { "value": "{typography.scale.t2.regular}", "type": "typography", "description": "아주 작은 텍스트 (11px)" },
+        "buttonLarge": { "value": "{typography.scale.t6.medium}", "type": "typography", "description": "큰 버튼 (16px, medium)" },
+        "buttonMedium": { "value": "{typography.scale.t5.medium}", "type": "typography", "description": "중간 버튼 (15px, medium)" },
+        "buttonSmall": { "value": "{typography.scale.t4.medium}", "type": "typography", "description": "작은 버튼 (14px, medium)" }
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "light",
+      "name": "Light",
+      "selectedTokenSets": {
+        "primitive": "source",
+        "semantic": "enabled"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": [
+      "primitive",
+      "semantic"
+    ]
+  }
+}
