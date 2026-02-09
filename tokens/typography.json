@@ -1,305 +1,186 @@
 {
   "$schema": "https://tr.designtokens.org/format/",
   "typography": {
-    "scale": {
-      "t1": {
-        "regular": {
+    "display": {
+      "d1": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t18}",
+          "lineHeight": "{line-height.t18}",
+          "fontWeight": "{font-weight.bold}",
+          "letterSpacing": "{letter-spacing.tight}"
+        },
+        "type": "typography",
+        "description": "Display - 48px, Bold"
+      },
+      "d2": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t17}",
+          "lineHeight": "{line-height.t17}",
+          "fontWeight": "{font-weight.bold}"
+        },
+        "type": "typography",
+        "description": "Display - 40px, Bold"
+      },
+      "d3": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t16}",
+          "lineHeight": "{line-height.t16}",
+          "fontWeight": "{font-weight.bold}"
+        },
+        "type": "typography",
+        "description": "Display - 36px, Bold"
+      },
+      "d4": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t15}",
+          "lineHeight": "{line-height.t15}",
+          "fontWeight": "{font-weight.bold}"
+        },
+        "type": "typography",
+        "description": "Display - 32px, Bold"
+      },
+      "d5": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t14}",
+          "lineHeight": "{line-height.t14}",
+          "fontWeight": "{font-weight.bold}"
+        },
+        "type": "typography",
+        "description": "Display - 28px, Bold"
+      },
+      "d6": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t12}",
+          "lineHeight": "{line-height.t13}",
+          "fontWeight": "{font-weight.bold}"
+        },
+        "type": "typography",
+        "description": "Display - 24px, Bold"
+      }
+    },
+    "header": {
+      "h1": {
+        "bold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t1}",
-            "lineHeight": "{line-height.t1}",
-            "fontWeight": "{font-weight.regular}"
+            "fontSize": "{font-size.t13}",
+            "lineHeight": "{line-height.t13}",
+            "fontWeight": "{font-weight.bold}"
           },
           "type": "typography",
-          "description": "10px, regular (400)"
+          "description": "Header - 26px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t13}",
+            "lineHeight": "{line-height.t13}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 26px, SemiBold"
         },
         "medium": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t1}",
-            "lineHeight": "{line-height.t1}",
+            "fontSize": "{font-size.t13}",
+            "lineHeight": "{line-height.t13}",
             "fontWeight": "{font-weight.medium}"
           },
           "type": "typography",
-          "description": "10px, medium (500)"
-        },
+          "description": "Header - 26px, Medium"
+        }
+      },
+      "h2": {
         "bold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t1}",
-            "lineHeight": "{line-height.t1}",
+            "fontSize": "{font-size.t12}",
+            "lineHeight": "{line-height.t12}",
             "fontWeight": "{font-weight.bold}"
           },
           "type": "typography",
-          "description": "10px, bold (700)"
-        }
-      },
-      "t2": {
-        "regular": {
+          "description": "Header - 24px, Bold"
+        },
+        "semibold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t2}",
-            "lineHeight": "{line-height.t2}",
-            "fontWeight": "{font-weight.regular}"
+            "fontSize": "{font-size.t12}",
+            "lineHeight": "{line-height.t12}",
+            "fontWeight": "{font-weight.semibold}"
           },
           "type": "typography",
-          "description": "11px, regular"
+          "description": "Header - 24px, SemiBold"
         },
         "medium": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t2}",
-            "lineHeight": "{line-height.t2}",
+            "fontSize": "{font-size.t12}",
+            "lineHeight": "{line-height.t12}",
             "fontWeight": "{font-weight.medium}"
           },
           "type": "typography",
-          "description": "11px, medium"
-        },
+          "description": "Header - 24px, Medium"
+        }
+      },
+      "h3": {
         "bold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t2}",
-            "lineHeight": "{line-height.t2}",
+            "fontSize": "{font-size.t11}",
+            "lineHeight": "{line-height.t11}",
             "fontWeight": "{font-weight.bold}"
           },
           "type": "typography",
-          "description": "11px, bold"
-        }
-      },
-      "t3": {
-        "regular": {
+          "description": "Header - 22px, Bold"
+        },
+        "semibold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t3}",
-            "lineHeight": "{line-height.t3}",
-            "fontWeight": "{font-weight.regular}"
+            "fontSize": "{font-size.t11}",
+            "lineHeight": "{line-height.t11}",
+            "fontWeight": "{font-weight.semibold}"
           },
           "type": "typography",
-          "description": "12px, regular"
+          "description": "Header - 22px, SemiBold"
         },
         "medium": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t3}",
-            "lineHeight": "{line-height.t3}",
+            "fontSize": "{font-size.t11}",
+            "lineHeight": "{line-height.t11}",
             "fontWeight": "{font-weight.medium}"
           },
           "type": "typography",
-          "description": "12px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t3}",
-            "lineHeight": "{line-height.t3}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "12px, bold"
+          "description": "Header - 22px, Medium"
         }
       },
-      "t4": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t4}",
-            "lineHeight": "{line-height.t4}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "14px, regular"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t4}",
-            "lineHeight": "{line-height.t4}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "14px, medium"
-        },
+      "h4": {
         "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t4}",
-            "lineHeight": "{line-height.t4}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "14px, bold"
-        }
-      },
-      "t5": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t5}",
-            "lineHeight": "{line-height.t5}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "15px, regular"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t5}",
-            "lineHeight": "{line-height.t5}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "15px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t5}",
-            "lineHeight": "{line-height.t5}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "15px, bold"
-        }
-      },
-      "t6": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t6}",
-            "lineHeight": "{line-height.t6}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "16px, regular (기본 본문)"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t6}",
-            "lineHeight": "{line-height.t6}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "16px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t6}",
-            "lineHeight": "{line-height.t6}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "16px, bold"
-        }
-      },
-      "t7": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t7}",
-            "lineHeight": "{line-height.t7}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "18px, regular"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t7}",
-            "lineHeight": "{line-height.t7}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "18px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t7}",
-            "lineHeight": "{line-height.t7}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "18px, bold"
-        }
-      },
-      "t8": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t8}",
-            "lineHeight": "{line-height.t8}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "20px, regular"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t8}",
-            "lineHeight": "{line-height.t8}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "20px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t8}",
-            "lineHeight": "{line-height.t8}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "20px, bold"
-        }
-      },
-      "t9": {
-        "regular": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t9}",
-            "lineHeight": "{line-height.t9}",
-            "fontWeight": "{font-weight.regular}"
-          },
-          "type": "typography",
-          "description": "24px, regular"
-        },
-        "medium": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t9}",
-            "lineHeight": "{line-height.t9}",
-            "fontWeight": "{font-weight.medium}"
-          },
-          "type": "typography",
-          "description": "24px, medium"
-        },
-        "bold": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t9}",
-            "lineHeight": "{line-height.t9}",
-            "fontWeight": "{font-weight.bold}"
-          },
-          "type": "typography",
-          "description": "24px, bold"
-        }
-      },
-      "t10": {
-        "regular": {
           "value": {
             "fontFamily": "{font-family.default}",
             "fontSize": "{font-size.t10}",
             "lineHeight": "{line-height.t10}",
-            "fontWeight": "{font-weight.regular}"
+            "fontWeight": "{font-weight.bold}"
           },
           "type": "typography",
-          "description": "32px, regular"
+          "description": "Header - 20px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t10}",
+            "lineHeight": "{line-height.t10}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 20px, SemiBold"
         },
         "medium": {
           "value": {
@@ -309,105 +190,476 @@
             "fontWeight": "{font-weight.medium}"
           },
           "type": "typography",
-          "description": "32px, medium"
-        },
+          "description": "Header - 20px, Medium"
+        }
+      },
+      "h5": {
         "bold": {
           "value": {
             "fontFamily": "{font-family.default}",
-            "fontSize": "{font-size.t10}",
-            "lineHeight": "{line-height.t10}",
+            "fontSize": "{font-size.t9}",
+            "lineHeight": "{line-height.t9}",
             "fontWeight": "{font-weight.bold}"
           },
           "type": "typography",
-          "description": "32px, bold (큰 제목)"
+          "description": "Header - 19px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t9}",
+            "lineHeight": "{line-height.t9}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 19px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t9}",
+            "lineHeight": "{line-height.t9}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 19px, Medium"
+        }
+      },
+      "h6": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t8}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 17px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t8}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 17px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t8}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 17px, Medium"
+        }
+      },
+      "h7": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t7}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 16px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t7}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 16px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t7}",
+            "lineHeight": "{line-height.t8}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 16px, Medium"
+        }
+      },
+      "h8": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t6}",
+            "lineHeight": "{line-height.t6}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 15px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t6}",
+            "lineHeight": "{line-height.t6}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 15px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t6}",
+            "lineHeight": "{line-height.t6}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 15px, Medium"
+        }
+      },
+      "h9": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t5}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 14px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t5}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 14px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t5}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 14px, Medium"
+        }
+      },
+      "h10": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t4}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 13px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t4}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 13px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t4}",
+            "lineHeight": "{line-height.t5}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 13px, Medium"
+        }
+      },
+      "h11": {
+        "bold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t2}",
+            "lineHeight": "{line-height.t4}",
+            "fontWeight": "{font-weight.bold}"
+          },
+          "type": "typography",
+          "description": "Header - 11px, Bold"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t2}",
+            "lineHeight": "{line-height.t4}",
+            "fontWeight": "{font-weight.semibold}"
+          },
+          "type": "typography",
+          "description": "Header - 11px, SemiBold"
+        },
+        "medium": {
+          "value": {
+            "fontFamily": "{font-family.default}",
+            "fontSize": "{font-size.t2}",
+            "lineHeight": "{line-height.t4}",
+            "fontWeight": "{font-weight.medium}"
+          },
+          "type": "typography",
+          "description": "Header - 11px, Medium"
         }
       }
     },
-    "semantic": {
-      "screenTitle": {
-        "value": "{typography.scale.t10.bold}",
+    "body": {
+      "b1": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t12}",
+          "lineHeight": "{line-height.t13}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "화면 최상단 제목 (32px, bold)"
+        "description": "Body - 24px, Regular"
       },
-      "pageTitle": {
-        "value": "{typography.scale.t9.bold}",
+      "b2": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t12}",
+          "lineHeight": "{line-height.t12}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "페이지 제목 (24px, bold)"
+        "description": "Body - 24px, Regular"
       },
-      "sectionTitle": {
-        "value": "{typography.scale.t8.bold}",
+      "b3": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t11}",
+          "lineHeight": "{line-height.t11}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "섹션 제목 (20px, bold)"
+        "description": "Body - 22px, Regular"
       },
-      "heading": {
-        "value": "{typography.scale.t7.bold}",
+      "b4": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t10}",
+          "lineHeight": "{line-height.t10}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "소제목 (18px, bold)"
+        "description": "Body - 20px, Regular"
       },
-      "subheading": {
-        "value": "{typography.scale.t6.medium}",
+      "b5": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t9}",
+          "lineHeight": "{line-height.t9}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "부제목 (16px, medium)"
+        "description": "Body - 19px, Regular"
       },
-      "body": {
-        "value": "{typography.scale.t6.regular}",
+      "b6": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t8}",
+          "lineHeight": "{line-height.t8}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "기본 본문 (16px, regular)"
+        "description": "Body - 17px, Regular"
       },
-      "bodyEmphasis": {
-        "value": "{typography.scale.t6.medium}",
+      "b7": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t7}",
+          "lineHeight": "{line-height.t8}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "강조 본문 (16px, medium)"
+        "description": "Body - 16px, Regular"
       },
-      "bodyLarge": {
-        "value": "{typography.scale.t7.regular}",
+      "b8": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t6}",
+          "lineHeight": "{line-height.t6}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "큰 본문 (18px, regular)"
+        "description": "Body - 15px, Regular"
       },
-      "bodySmall": {
-        "value": "{typography.scale.t5.regular}",
+      "b9": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t5}",
+          "lineHeight": "{line-height.t5}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "작은 본문 (15px, regular)"
+        "description": "Body - 14px, Regular"
       },
-      "label": {
-        "value": "{typography.scale.t5.medium}",
+      "b10": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t4}",
+          "lineHeight": "{line-height.t5}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "라벨 (15px, medium)"
+        "description": "Body - 13px, Regular"
       },
-      "caption": {
-        "value": "{typography.scale.t4.regular}",
+      "b11": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t2}",
+          "lineHeight": "{line-height.t4}",
+          "fontWeight": "{font-weight.regular}"
+        },
         "type": "typography",
-        "description": "캡션/설명 (14px, regular)"
+        "description": "Body - 11px, Regular"
+      }
+    },
+    "button": {
+      "b1": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t9}",
+          "lineHeight": "{line-height.t9}",
+          "fontWeight": "{font-weight.medium}"
+        },
+        "type": "typography",
+        "description": "Button - 19px, Medium"
       },
-      "captionEmphasis": {
-        "value": "{typography.scale.t4.medium}",
+      "b2": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t8}",
+          "lineHeight": "{line-height.t8}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "강조 캡션 (14px, medium)"
+        "description": "Button - 17px, Medium"
       },
-      "footnote": {
-        "value": "{typography.scale.t3.regular}",
+      "b3": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t6}",
+          "lineHeight": "{line-height.t6}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "각주 (12px, regular)"
+        "description": "Button - 15px, Medium"
       },
-      "micro": {
-        "value": "{typography.scale.t2.regular}",
+      "b4": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t4}",
+          "lineHeight": "{line-height.t5}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "아주 작은 텍스트 (11px, regular)"
+        "description": "Button - 13px, Medium"
       },
-      "buttonLarge": {
-        "value": "{typography.scale.t6.medium}",
+      "b5": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t2}",
+          "lineHeight": "{line-height.t4}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "큰 버튼 텍스트 (16px, medium)"
+        "description": "Button - 11px, Medium"
+      }
+    },
+    "label": {
+      "l1": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t7}",
+          "lineHeight": "{line-height.t5}",
+          "fontWeight": "{font-weight.medium}"
+        },
+        "type": "typography",
+        "description": "Label - 16px, Medium"
       },
-      "buttonMedium": {
-        "value": "{typography.scale.t5.medium}",
+      "l2": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t5}",
+          "lineHeight": "{line-height.t3}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "중간 버튼 텍스트 (15px, medium)"
+        "description": "Label - 14px, Medium"
       },
-      "buttonSmall": {
-        "value": "{typography.scale.t4.medium}",
+      "l3": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t3}",
+          "lineHeight": "{line-height.t2}",
+          "fontWeight": "{font-weight.medium}"
+        },
         "type": "typography",
-        "description": "작은 버튼 텍스트 (14px, medium)"
+        "description": "Label - 12px, Medium"
+      },
+      "l4": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t1}",
+          "lineHeight": "{line-height.t1}",
+          "fontWeight": "{font-weight.medium}"
+        },
+        "type": "typography",
+        "description": "Label - 10px, Medium"
+      }
+    },
+    "paragraph": {
+      "p1": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t8}",
+          "lineHeight": "{line-height.t10}",
+          "fontWeight": "{font-weight.regular}",
+          "letterSpacing": "{letter-spacing.tight}",
+          "paragraphSpacing": "{paragraph-spacing.medium}"
+        },
+        "type": "typography",
+        "description": "Paragraph - 17px, Regular"
+      },
+      "p2": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t6}",
+          "lineHeight": "{line-height.t9}",
+          "fontWeight": "{font-weight.regular}",
+          "letterSpacing": "{letter-spacing.tight}",
+          "paragraphSpacing": "{paragraph-spacing.small}"
+        },
+        "type": "typography",
+        "description": "Paragraph - 15px, Regular"
+      },
+      "p3": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontSize": "{font-size.t5}",
+          "lineHeight": "{line-height.t7}",
+          "fontWeight": "{font-weight.regular}",
+          "letterSpacing": "{letter-spacing.tight}",
+          "paragraphSpacing": "{paragraph-spacing.small}"
+        },
+        "type": "typography",
+        "description": "Paragraph - 14px, Regular"
       }
     }
   }

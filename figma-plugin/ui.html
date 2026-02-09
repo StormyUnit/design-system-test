@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      color: #333;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .badge {
+      background: #0679df;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .status {
+      padding: 8px 12px;
+      background: #f1f4f6;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: #5e686e;
+    }
+
+    .status.success {
+      background: #eaf9ee;
+      color: #018827;
+    }
+
+    .status.empty {
+      background: #ffefef;
+      color: #c54343;
+    }
+
+    .json-preview {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 12px;
+      border-radius: 6px;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 11px;
+      line-height: 1.5;
+      overflow: auto;
+      max-height: 340px;
+      white-space: pre;
+      margin-bottom: 12px;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn-primary {
+      background: #0679df;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #065cb3; }
+
+    .btn-secondary {
+      background: #e7edf0;
+      color: #333;
+    }
+    .btn-secondary:hover { background: #cfd5d9; }
+
+    .btn-refresh {
+      background: #f1f4f6;
+      color: #4a5256;
+      margin-bottom: 12px;
+      flex: none;
+      width: 100%;
+    }
+    .btn-refresh:hover { background: #e7edf0; }
+
+    .toast {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222629;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Text Styles Extractor</h2>
+    <span class="badge" id="count">-</span>
+  </div>
+
+  <div class="status" id="status">추출 중...</div>
+
+  <button class="btn-refresh" id="refreshBtn" onclick="refresh()">다시 추출하기</button>
+
+  <div class="json-preview" id="preview">로딩 중...</div>
+
+  <div class="button-row">
+    <button class="btn-primary" id="copyBtn" onclick="copyToClipboard()" disabled>클립보드에 복사</button>
+    <button class="btn-secondary" id="downloadBtn" onclick="downloadJSON()" disabled>JSON 다운로드</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    let jsonData = null;
+    let jsonString = '';
+
+    function refresh() {
+      document.getElementById('status').className = 'status';
+      document.getElementById('status').textContent = '추출 중...';
+      document.getElementById('preview').textContent = '로딩 중...';
+      parent.postMessage({ pluginMessage: { type: 'extract' } }, '*');
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function copyToClipboard() {
+      if (!jsonString) return;
+
+      const textarea = document.createElement('textarea');
+      textarea.value = jsonString;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        document.execCommand('copy');
+        showToast('클립보드에 복사되었습니다!');
+      } catch (e) {
+        showToast('복사 실패 - 수동으로 복사해주세요');
+      }
+
+      document.body.removeChild(textarea);
+    }
+
+    function downloadJSON() {
+      if (!jsonString) return;
+
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ride-text-styles.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('다운로드가 시작되었습니다!');
+    }
+
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      if (!msg || msg.type !== 'export-result') return;
+
+      jsonData = msg.data;
+      jsonString = JSON.stringify(jsonData, null, 2);
+
+      // 상태 업데이트
+      const count = jsonData.metadata.totalStyles;
+      document.getElementById('count').textContent = count + '개';
+
+      if (count === 0) {
+        document.getElementById('status').className = 'status empty';
+        document.getElementById('status').textContent = 'Text Style을 찾을 수 없습니다. Ride 디자인 파일에서 실행해주세요.';
+      } else {
+        document.getElementById('status').className = 'status success';
+        document.getElementById('status').textContent =
+          count + '개의 Text Style을 추출했습니다. (' + jsonData.metadata.figmaFileName + ')';
+      }
+
+      // 미리보기
+      document.getElementById('preview').textContent = jsonString;
+
+      // 버튼 활성화
+      document.getElementById('copyBtn').disabled = (count === 0);
+      document.getElementById('downloadBtn').disabled = (count === 0);
+    };
+  </script>
+</body>
+</html>
