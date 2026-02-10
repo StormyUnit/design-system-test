@@ -1,0 +1,171 @@
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fafafa;
+  color: #222629;
+  line-height: 1.5;
+}
+
+/* ── App shell ── */
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #e7edf0;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.app-title { font-size: 18px; font-weight: 700; white-space: nowrap; }
+.app-nav { display: flex; gap: 4px; }
+.nav-tab {
+  padding: 6px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #6e777c;
+  font-family: inherit;
+}
+.nav-tab:hover { background: #f1f4f6; }
+.nav-tab--active { background: #222629; color: #fff; }
+.nav-tab--active:hover { background: #353b3f; }
+
+.app-main { padding: 32px 24px; max-width: 1280px; margin: 0 auto; }
+
+/* ── Section titles ── */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #222629;
+}
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6e777c;
+  margin: 24px 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Color swatches ── */
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.swatch {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6px;
+  font-size: 10px;
+  overflow: hidden;
+}
+.swatch-label { font-weight: 600; }
+.swatch-hex { opacity: 0.7; }
+.swatch--light .swatch-label,
+.swatch--light .swatch-hex { color: #222629; }
+.swatch--dark .swatch-label,
+.swatch--dark .swatch-hex { color: #fff; }
+
+.semantic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.semantic-swatch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e7edf0;
+  font-size: 12px;
+}
+.semantic-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.semantic-name { font-weight: 500; word-break: break-all; }
+
+/* ── Typography samples ── */
+.typo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.typo-table th, .typo-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e7edf0;
+}
+.typo-table th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6e777c;
+  text-transform: uppercase;
+}
+
+/* ── Buttons preview ── */
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.btn-grid-header {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6e777c;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn-row-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a5256;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+.btn-cell { display: flex; justify-content: center; }
+
+.state-section {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.state-group {
+  background: #fff;
+  border: 1px solid #e7edf0;
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 160px;
+}
+.state-group-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6e777c;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.state-group-btns { display: flex; flex-direction: column; gap: 8px; }

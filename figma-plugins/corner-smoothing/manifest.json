@@ -1,0 +1,8 @@
+{
+  "name": "Corner Smoothing 60%",
+  "id": "ride-corner-smoothing-60",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    color: #333;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  h2 { font-size: 15px; font-weight: 700; }
+  .desc { color: #666; line-height: 1.5; }
+  .badge {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a73e8;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .btn-primary { background: #18a0fb; color: #fff; }
+  .btn-primary:hover { background: #0d8de6; }
+  .btn-secondary { background: #f0f0f0; color: #333; }
+  .btn-secondary:hover { background: #e4e4e4; }
+  #result {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    display: none;
+  }
+  .result-ok { background: #e6f4ea; color: #137333; }
+  .result-err { background: #fce8e6; color: #c5221f; }
+</style>
+</head>
+<body>
+
+  <h2>Corner Smoothing <span class="badge">60%</span></h2>
+  <p class="desc">
+    cornerRadius &gt; 0 인 노드에 cornerSmoothing 0.6(iOS 스타일)을 일괄 적용합니다.
+  </p>
+
+  <button class="btn-primary" id="btnSel">Apply to Selection (with children)</button>
+  <button class="btn-secondary" id="btnPage">Apply to Entire Page</button>
+
+  <div id="result"></div>
+
+<script>
+  const resultEl = document.getElementById('result');
+
+  document.getElementById('btnSel').onclick = () => {
+    resultEl.style.display = 'none';
+    parent.postMessage({ pluginMessage: { type: 'apply-selection' } }, '*');
+  };
+
+  document.getElementById('btnPage').onclick = () => {
+    resultEl.style.display = 'none';
+    parent.postMessage({ pluginMessage: { type: 'apply-page' } }, '*');
+  };
+
+  onmessage = (e) => {
+    const msg = e.data.pluginMessage;
+    if (msg.type !== 'result') return;
+
+    resultEl.style.display = 'block';
+
+    if (msg.error) {
+      resultEl.className = 'result-err';
+      resultEl.textContent = msg.error;
+      return;
+    }
+
+    resultEl.className = 'result-ok';
+    resultEl.innerHTML =
+      '<strong>' + msg.scope + '</strong><br>' +
+      'Changed: <strong>' + msg.changed + '</strong> nodes<br>' +
+      'Already 0.6 (skipped): ' + msg.skipped + ' nodes';
+  };
+</script>
+
+</body>
+</html>

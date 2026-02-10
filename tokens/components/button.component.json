@@ -1,0 +1,248 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Ride Button Component Tokens — SEED Action Button 구조 (Size × 5, Variant × 7, State × 4)",
+
+  "button": {
+    "size": {
+      "xs": {
+        "height": { "value": "{dimension.x7}", "type": "dimension", "description": "XS 버튼 높이 — 28px" },
+        "paddingX": { "value": "{dimension.x2_5}", "type": "dimension", "description": "XS 좌우 패딩 — 10px" },
+        "paddingY": { "value": "{dimension.x1}", "type": "dimension", "description": "XS 상하 패딩 — 4px" },
+        "radius": { "value": "{radius.r2}", "type": "dimension", "description": "XS 라운딩 8px" },
+        "iconSize": { "value": "{dimension.x3_5}", "type": "dimension", "description": "XS 아이콘 크기 — 14px" },
+        "iconGap": { "value": "{dimension.x1}", "type": "dimension", "description": "XS 아이콘-텍스트 간격 — 4px" },
+        "typography": { "value": "{typography.button.b5}", "type": "typography", "description": "XS 타이포 — 11px Medium" }
+      },
+      "s": {
+        "height": { "value": "{dimension.x8}", "type": "dimension", "description": "S 버튼 높이 — 32px" },
+        "paddingX": { "value": "{dimension.x3}", "type": "dimension", "description": "S 좌우 패딩 — 12px" },
+        "paddingY": { "value": "{dimension.x1_5}", "type": "dimension", "description": "S 상하 패딩 — 6px" },
+        "radius": { "value": "{radius.r2_5}", "type": "dimension", "description": "S 라운딩 10px" },
+        "iconSize": { "value": "{dimension.x4}", "type": "dimension", "description": "S 아이콘 크기 — 16px" },
+        "iconGap": { "value": "{dimension.x1}", "type": "dimension", "description": "S 아이콘-텍스트 간격 — 4px" },
+        "typography": { "value": "{typography.button.b4}", "type": "typography", "description": "S 타이포 — 13px Medium" }
+      },
+      "m": {
+        "height": { "value": "{dimension.x10}", "type": "dimension", "description": "M 버튼 높이 — 40px" },
+        "paddingX": { "value": "{dimension.x4}", "type": "dimension", "description": "M 좌우 패딩 — 16px" },
+        "paddingY": { "value": "{dimension.x2_5}", "type": "dimension", "description": "M 상하 패딩 — 10px" },
+        "radius": { "value": "{radius.r3}", "type": "dimension", "description": "M 라운딩 12px" },
+        "iconSize": { "value": "{dimension.x4_5}", "type": "dimension", "description": "M 아이콘 크기 — 18px" },
+        "iconGap": { "value": "{dimension.x1_5}", "type": "dimension", "description": "M 아이콘-텍스트 간격 — 6px" },
+        "typography": { "value": "{typography.button.b3}", "type": "typography", "description": "M 타이포 — 15px Medium" }
+      },
+      "l": {
+        "height": { "value": "{dimension.x12}", "type": "dimension", "description": "L 버튼 높이 — 48px" },
+        "paddingX": { "value": "{dimension.x5}", "type": "dimension", "description": "L 좌우 패딩 — 20px" },
+        "paddingY": { "value": "{dimension.x3}", "type": "dimension", "description": "L 상하 패딩 — 12px" },
+        "radius": { "value": "{radius.r3}", "type": "dimension", "description": "L 라운딩 12px" },
+        "iconSize": { "value": "{dimension.x5}", "type": "dimension", "description": "L 아이콘 크기 — 20px" },
+        "iconGap": { "value": "{dimension.x1_5}", "type": "dimension", "description": "L 아이콘-텍스트 간격 — 6px" },
+        "typography": { "value": "{typography.button.b3}", "type": "typography", "description": "L 타이포 — 15px Medium" }
+      },
+      "xl": {
+        "height": { "value": "{dimension.x14}", "type": "dimension", "description": "XL 버튼 높이 — 56px" },
+        "paddingX": { "value": "{dimension.x6}", "type": "dimension", "description": "XL 좌우 패딩 — 24px" },
+        "paddingY": { "value": "{dimension.x3_5}", "type": "dimension", "description": "XL 상하 패딩 — 14px" },
+        "radius": { "value": "{radius.r3_5}", "type": "dimension", "description": "XL 라운딩 14px" },
+        "iconSize": { "value": "{dimension.x5_5}", "type": "dimension", "description": "XL 아이콘 크기 — 22px" },
+        "iconGap": { "value": "{dimension.x2}", "type": "dimension", "description": "XL 아이콘-텍스트 간격 — 8px" },
+        "typography": { "value": "{typography.button.b2}", "type": "typography", "description": "XL 타이포 — 17px Medium" }
+      }
+    },
+
+    "variant": {
+      "brand-solid": {
+        "enabled": {
+          "bg": { "value": "{color.bg.brand-solid}", "type": "color", "description": "브랜드 솔리드 배경" },
+          "fg": { "value": "{color.fg.brand-contrast}", "type": "color", "description": "브랜드 솔리드 텍스트 (흰색)" },
+          "stroke": { "value": "transparent", "type": "color", "description": "테두리 없음" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.brand-solid-pressed}", "type": "color", "description": "브랜드 솔리드 눌림 배경" },
+          "fg": { "value": "{color.fg.brand-contrast}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "{color.blue.200}", "type": "color", "description": "비활성 — 연한 브랜드 배경" },
+          "fg": { "value": "{color.common.white}", "type": "color", "description": "비활성 — 흰색 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "{color.bg.brand-solid}", "type": "color", "description": "로딩 — enabled와 동일" },
+          "fg": { "value": "{color.fg.brand-contrast}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.common.white}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "brand-outline": {
+        "enabled": {
+          "bg": { "value": "transparent", "type": "color", "description": "브랜드 아웃라인 투명 배경" },
+          "fg": { "value": "{color.fg.brand-solid}", "type": "color", "description": "브랜드 텍스트" },
+          "stroke": { "value": "{color.stroke.brand-solid}", "type": "color", "description": "브랜드 테두리" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.brand-subtle}", "type": "color", "description": "눌림 — 연한 브랜드 배경" },
+          "fg": { "value": "{color.fg.brand-solid-pressed}", "type": "color" },
+          "stroke": { "value": "{color.stroke.brand-solid-pressed}", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "transparent", "type": "color", "description": "비활성 — 투명 배경" },
+          "fg": { "value": "{color.blue.300}", "type": "color", "description": "비활성 — 연한 브랜드 텍스트" },
+          "stroke": { "value": "{color.blue.200}", "type": "color", "description": "비활성 — 연한 브랜드 테두리" }
+        },
+        "loading": {
+          "bg": { "value": "transparent", "type": "color" },
+          "fg": { "value": "{color.fg.brand-solid}", "type": "color" },
+          "stroke": { "value": "{color.stroke.brand-solid}", "type": "color" },
+          "spinner": { "value": "{color.blue.600}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "neutral-solid": {
+        "enabled": {
+          "bg": { "value": "{color.bg.neutral}", "type": "color", "description": "중립 솔리드 배경 (gray.900)" },
+          "fg": { "value": "{color.fg.neutral-inverted}", "type": "color", "description": "어두운 배경 위 흰색 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.gray.800}", "type": "color", "description": "눌림 배경" },
+          "fg": { "value": "{color.fg.neutral-inverted}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "{color.gray.200}", "type": "color", "description": "비활성 — 연한 회색 배경" },
+          "fg": { "value": "{color.common.white}", "type": "color", "description": "비활성 — 흰색 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "{color.bg.neutral}", "type": "color" },
+          "fg": { "value": "{color.fg.neutral-inverted}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.common.white}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "neutral-outline": {
+        "enabled": {
+          "bg": { "value": "transparent", "type": "color", "description": "중립 아웃라인 투명 배경" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color", "description": "기본 텍스트 색상" },
+          "stroke": { "value": "{color.stroke.neutral-weak}", "type": "color", "description": "약한 중립 테두리" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.neutral-subtle}", "type": "color", "description": "눌림 — 매우 연한 배경" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "{color.stroke.neutral-weak}", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "transparent", "type": "color" },
+          "fg": { "value": "{color.gray.400}", "type": "color", "description": "비활성 — 흐린 텍스트" },
+          "stroke": { "value": "{color.gray.200}", "type": "color", "description": "비활성 — 연한 테두리" }
+        },
+        "loading": {
+          "bg": { "value": "transparent", "type": "color" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "{color.stroke.neutral-weak}", "type": "color" },
+          "spinner": { "value": "{color.gray.600}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "neutral-weak": {
+        "enabled": {
+          "bg": { "value": "{color.bg.neutral-solid}", "type": "color", "description": "약한 중립 배경 (gray.100)" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color", "description": "기본 텍스트 색상" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.neutral-weak}", "type": "color", "description": "눌림 — 약간 진한 배경 (gray.200)" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "{color.gray.100}", "type": "color", "description": "비활성 — 연한 배경" },
+          "fg": { "value": "{color.gray.400}", "type": "color", "description": "비활성 — 흐린 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "{color.bg.neutral-solid}", "type": "color" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.gray.600}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "brand-weak": {
+        "enabled": {
+          "bg": { "value": "{color.bg.brand-weak}", "type": "color", "description": "연한 브랜드 배경 (blue.100)" },
+          "fg": { "value": "{color.fg.brand-solid}", "type": "color", "description": "브랜드 텍스트 (blue.600)" },
+          "stroke": { "value": "transparent", "type": "color", "description": "테두리 없음" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.brand-weak-pressed}", "type": "color", "description": "눌림 — 한 단계 진한 브랜드 배경 (blue.200)" },
+          "fg": { "value": "{color.fg.brand-solid-pressed}", "type": "color", "description": "눌림 — 진한 브랜드 텍스트 (blue.700)" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "{color.blue.50}", "type": "color", "description": "비활성 — 가장 연한 브랜드 배경" },
+          "fg": { "value": "{color.blue.300}", "type": "color", "description": "비활성 — 연한 브랜드 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "{color.bg.brand-weak}", "type": "color", "description": "로딩 — enabled와 동일" },
+          "fg": { "value": "{color.fg.brand-solid}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.blue.600}", "type": "color", "description": "브랜드 스피너 색상" }
+        }
+      },
+
+      "critical-solid": {
+        "enabled": {
+          "bg": { "value": "{color.bg.critical-solid}", "type": "color", "description": "오류/위험 배경" },
+          "fg": { "value": "{color.fg.critical-contrast}", "type": "color", "description": "빨간 배경 위 흰색 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.critical-solid-pressed}", "type": "color", "description": "눌림 배경" },
+          "fg": { "value": "{color.fg.critical-contrast}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "{color.red.200}", "type": "color", "description": "비활성 — 연한 빨간 배경" },
+          "fg": { "value": "{color.common.white}", "type": "color", "description": "비활성 — 흰색 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "{color.bg.critical-solid}", "type": "color" },
+          "fg": { "value": "{color.fg.critical-contrast}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.common.white}", "type": "color", "description": "스피너 색상" }
+        }
+      },
+
+      "ghost": {
+        "enabled": {
+          "bg": { "value": "transparent", "type": "color", "description": "고스트 투명 배경" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color", "description": "기본 텍스트 색상" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "pressed": {
+          "bg": { "value": "{color.bg.neutral-subtle}", "type": "color", "description": "눌림 — 매우 연한 배경" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "disabled": {
+          "bg": { "value": "transparent", "type": "color" },
+          "fg": { "value": "{color.gray.400}", "type": "color", "description": "비활성 — 흐린 텍스트" },
+          "stroke": { "value": "transparent", "type": "color" }
+        },
+        "loading": {
+          "bg": { "value": "transparent", "type": "color" },
+          "fg": { "value": "{color.fg.neutral}", "type": "color" },
+          "stroke": { "value": "transparent", "type": "color" },
+          "spinner": { "value": "{color.gray.600}", "type": "color", "description": "스피너 색상" }
+        }
+      }
+    }
+  }
+}

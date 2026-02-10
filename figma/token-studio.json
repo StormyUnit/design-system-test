@@ -146,6 +146,63 @@
       "none": { "value": "0", "type": "paragraphSpacing", "description": "문단 간격 없음" },
       "small": { "value": "6", "type": "paragraphSpacing", "description": "작은 문단 간격" },
       "medium": { "value": "10", "type": "paragraphSpacing", "description": "중간 문단 간격" }
+    },
+    "dimension": {
+      "x0_5": { "value": "2", "type": "sizing", "description": "2px" },
+      "x1":   { "value": "4", "type": "sizing", "description": "4px" },
+      "x1_5": { "value": "6", "type": "sizing", "description": "6px" },
+      "x2":   { "value": "8", "type": "sizing", "description": "8px" },
+      "x2_5": { "value": "10", "type": "sizing", "description": "10px" },
+      "x3":   { "value": "12", "type": "sizing", "description": "12px" },
+      "x3_5": { "value": "14", "type": "sizing", "description": "14px" },
+      "x4":   { "value": "16", "type": "sizing", "description": "16px" },
+      "x4_5": { "value": "18", "type": "sizing", "description": "18px" },
+      "x5":   { "value": "20", "type": "sizing", "description": "20px" },
+      "x5_5": { "value": "22", "type": "sizing", "description": "22px" },
+      "x6":   { "value": "24", "type": "sizing", "description": "24px" },
+      "x6_5": { "value": "26", "type": "sizing", "description": "26px" },
+      "x7":   { "value": "28", "type": "sizing", "description": "28px" },
+      "x7_5": { "value": "30", "type": "sizing", "description": "30px" },
+      "x8":   { "value": "32", "type": "sizing", "description": "32px" },
+      "x8_5": { "value": "34", "type": "sizing", "description": "34px" },
+      "x9":   { "value": "36", "type": "sizing", "description": "36px" },
+      "x9_5": { "value": "38", "type": "sizing", "description": "38px" },
+      "x10":  { "value": "40", "type": "sizing", "description": "40px" },
+      "x10_5":{ "value": "42", "type": "sizing", "description": "42px" },
+      "x11":  { "value": "44", "type": "sizing", "description": "44px" },
+      "x11_5":{ "value": "46", "type": "sizing", "description": "46px" },
+      "x12":  { "value": "48", "type": "sizing", "description": "48px" },
+      "x12_5":{ "value": "50", "type": "sizing", "description": "50px" },
+      "x13":  { "value": "52", "type": "sizing", "description": "52px" },
+      "x13_5":{ "value": "54", "type": "sizing", "description": "54px" },
+      "x14":  { "value": "56", "type": "sizing", "description": "56px" },
+      "x14_5":{ "value": "58", "type": "sizing", "description": "58px" },
+      "x15":  { "value": "60", "type": "sizing", "description": "60px" },
+      "x15_5":{ "value": "62", "type": "sizing", "description": "62px" },
+      "x16":  { "value": "64", "type": "sizing", "description": "64px" }
+    },
+    "spacing": {
+      "global-gutter":      { "value": "{dimension.x4}", "type": "spacing", "description": "화면 좌우 여백 (16px)" },
+      "between-text":       { "value": "{dimension.x1_5}", "type": "spacing", "description": "텍스트 간 간격 (6px)" },
+      "component-default":  { "value": "{dimension.x3}", "type": "spacing", "description": "컴포넌트 기본 간격 (12px)" },
+      "nav-to-title":       { "value": "{dimension.x5}", "type": "spacing", "description": "네비게이션→타이틀 간격 (20px)" },
+      "screen-bottom":      { "value": "{dimension.x14}", "type": "spacing", "description": "화면 하단 여백 (56px)" }
+    },
+    "radius": {
+      "r0":   { "value": "0", "type": "borderRadius" },
+      "r1":   { "value": "4", "type": "borderRadius" },
+      "r1_5": { "value": "6", "type": "borderRadius" },
+      "r2":   { "value": "8", "type": "borderRadius" },
+      "r2_5": { "value": "10", "type": "borderRadius" },
+      "r3":   { "value": "12", "type": "borderRadius" },
+      "r3_5": { "value": "14", "type": "borderRadius" },
+      "r4":   { "value": "16", "type": "borderRadius" },
+      "full": { "value": "9999", "type": "borderRadius" }
+    },
+    "shadow": {
+      "s1": { "value": "0px 1px 4px 0px rgba(0,0,0,0.08)", "type": "boxShadow", "description": "Elevation 1 — 카드, 리스트 아이템" },
+      "s2": { "value": "0px 2px 10px 0px rgba(0,0,0,0.10)", "type": "boxShadow", "description": "Elevation 2 — 바텀시트, 드롭다운" },
+      "s3": { "value": "0px 4px 16px 0px rgba(0,0,0,0.12)", "type": "boxShadow", "description": "Elevation 3 — 다이얼로그, 플로팅 요소" }
     }
   },
   "semantic": {
@@ -191,6 +248,7 @@
         "brand-solid": { "value": "{color.blue.600}", "type": "color", "description": "브랜드 배경 (버튼 등) — Ride Primary Normal" },
         "brand-solid-pressed": { "value": "{color.blue.700}", "type": "color", "description": "브랜드 배경 (눌렀을 때)" },
         "brand-weak": { "value": "{color.blue.100}", "type": "color", "description": "연한 브랜드 배경" },
+        "brand-weak-pressed": { "value": "{color.blue.200}", "type": "color", "description": "연한 브랜드 배경 (눌렀을 때) — brand-weak 버튼 pressed 상태" },
         "brand-subtle": { "value": "{color.blue.50}", "type": "color", "description": "매우 연한 브랜드 배경" },
         "brand-inverted": { "value": "{color.blue.800}", "type": "color", "description": "어두운 브랜드 배경 — Ride Primary Heavy" },
         "neutral": { "value": "{color.gray.900}", "type": "color", "description": "기본 배경 (페이지) — Ride Background Primary" },
@@ -218,7 +276,10 @@
         "oxford-solid": { "value": "{color.oxford.500}", "type": "color", "description": "Oxford 배경" },
         "oxford-solid-pressed": { "value": "{color.oxford.600}", "type": "color" },
         "oxford-weak": { "value": "{color.oxford.100}", "type": "color" },
-        "oxford-subtle": { "value": "{color.oxford.50}", "type": "color" }
+        "oxford-subtle": { "value": "{color.oxford.50}", "type": "color" },
+        "layer-basement": { "value": "{color.gray.50}", "type": "color", "description": "최하위 배경 레이어 (스크롤 뒤)" },
+        "layer-default": { "value": "{color.common.white}", "type": "color", "description": "기본 표면 (카드, 페이지)" },
+        "layer-floating": { "value": "{color.common.white}", "type": "color", "description": "플로팅 요소 표면 (모달, 시트)" }
       },
       "stroke": {
         "brand-solid": { "value": "{color.blue.600}", "type": "color", "description": "브랜드 테두리" },
@@ -809,11 +870,11 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontSize": "{fontSizes.t4}",
-            "lineHeight": "{lineHeights.t5}",
+            "lineHeight": "{lineHeights.t6}",
             "fontWeight": "{fontWeights.medium}"
           },
           "type": "typography",
-          "description": "Button - 13px, Medium"
+          "description": "Button - 13px/20px, Medium"
         },
         "b5": {
           "value": {
@@ -906,6 +967,16 @@
           "description": "Paragraph - 14px, Regular"
         }
       }
+    },
+    "spacing": {
+      "default": { "value": "{dimension.x4}", "type": "spacing", "description": "기본 간격 — 16px (3단계 고정값)" },
+      "gutterX": { "value": "{dimension.x4}", "type": "spacing", "description": "화면 좌우 여백 — 16px" },
+      "gutterY": { "value": "{dimension.x4}", "type": "spacing", "description": "화면 상하 여백 — 16px" }
+    },
+    "skeleton": {
+      "bg": { "value": "{color.gray.100}", "type": "color", "description": "스켈레톤 기본 배경 (#f1f4f6)" },
+      "shimmer": { "value": "{color.gray.200}", "type": "color", "description": "스켈레톤 시머 하이라이트 (#e7edf0)" },
+      "radius": { "value": "{radius.r2}", "type": "borderRadius", "description": "스켈레톤 기본 라운딩 — 8px" }
     }
   },
   "$themes": [
